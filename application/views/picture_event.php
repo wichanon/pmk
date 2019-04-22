@@ -30,7 +30,7 @@
                                 <h4 class="card-title"><?=$value['name']?></h4>
                                 <p class="card-text mb-2"><?=$value['detail']?></p>
                                 <label for="" class="float-right m-0">Tag: <span
-                                        class="text-info"><strong><?=$value['tag']?></strong></span></label>aas
+                                        class="text-info"><strong><?=$value['tag']?></strong></span></label>
                             </div>
                         </div>
                     </div>
