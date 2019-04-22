@@ -1,0 +1,47 @@
+.history_gray_background{
+    background-color: #F1F4FA;
+}
+
+.img_box{
+    background-image: url('https://picsum.photos/350');
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.image_only{
+    
+    height: 700px;
+}
+
+.image_person{
+    overflow: hidden;
+    height: 300px;
+}
+
+.image_person img{
+    height: 100%;
+    margin: 0 auto;
+}
+
+.search_btn button{
+    width: 250px;
+    height: 50px;
+}
+
+
+@media only screen and (max-width: 991px) {
+    .img_box{
+        height: 300px;
+    }
+
+    .image_only{
+    
+        height: 300px;
+    }
+
+    .about_person h4,.about_person p {
+        text-align: center;
+    }
+}

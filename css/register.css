@@ -1,0 +1,10 @@
+.tab_search.selected{
+    background-color:blue;
+    color: white;
+}
+
+
+.tab_search{
+    background-color:#eee;
+    color: black;
+}

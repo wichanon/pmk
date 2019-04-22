@@ -1,0 +1,550 @@
+@font-face {
+    font-family: 'cs_prajadregular';
+    src: url('../fonts/csprajad-webfont.woff2') format('woff2'),
+        url('../fonts/csprajad-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'cs_prajadbold';
+    src: url('../fonts/csprajad-bold-webfont.woff2') format('woff2'),
+        url('../fonts/csprajad-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'cs_prajaditalic';
+    src: url('../fonts/csprajad-italic-webfont.woff2') format('woff2'),
+        url('../fonts/csprajad-italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'rsubold';
+    src: url('../fonts/rsu_bold-webfont.woff2') format('woff2'),
+        url('../fonts/rsu_bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'rsulight';
+    src: url('../fonts/rsu_light-webfont.woff2') format('woff2'),
+        url('../fonts/rsu_light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'rsuregular';
+    src: url('../fonts/rsu_regular-webfont.woff2') format('woff2'),
+        url('../fonts/rsu_regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: 'rsubold';
+    line-height: 1em;
+}
+
+.color_blueSky{
+    background-color: #2DA7DF;
+}
+.rsubold{
+    font-family: 'rsubold';
+    line-height: 1em;
+}
+
+header .nav-logo,
+.nav-menu {
+    height: 75px;
+}
+
+header .nav-menu {
+    background: rgb(79, 191, 168);
+    background: linear-gradient(90deg, rgba(19, 87, 152, 1) 0%, rgba(79, 191, 168, 1) 100%);
+}
+
+header .nav-menu a{
+    color: inherit;
+    text-decoration: none;
+}
+
+header .nav-menu .container,
+.nav-menu .row,
+.nav-menu .col {
+    height: 100%;
+}
+
+header .nav-menu .col {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    transition: all .2s;
+    transition-timing-function: linear;
+    color: white;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+header .nav-menu .col h5 {
+    margin: 0;
+}
+
+header .nav-menu .col.active,
+header .nav-menu .col:hover {
+    background-color: rgba(255, 255, 255, 1);
+    color: rgba(19, 87, 152, 1);
+}
+
+header .nav-menu .col.active::before,
+header .nav-menu .col:hover:before {
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(90deg, rgba(79, 191, 168, 1) 0%, rgba(19, 87, 152, 1) 100%);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    content: " ";
+}
+
+header .nav-menu .col:hover .submenu{
+    display: block;
+}
+
+header .nav-menu .col .submenu {
+    width: 100%;
+    position: absolute;
+    background-color: #fff;
+    color: rgba(19, 87, 152, 1);
+    top: 75px;
+    display: none;
+    z-index: 999;
+    box-shadow: 0 19px 38px rgba(19, 87, 152,0.20), 0 15px 12px rgba(19, 87, 152,0.12);
+}
+
+header .nav-menu .col .submenu li:hover, header .nav-menu .col .submenu li.active{
+    background-color: rgba(19, 87, 152, 1);
+    color: #fff;
+}
+
+header .nav-menu .col .submenu li {
+    height: 65px;
+    list-style: none;
+    text-align: center;
+    cursor: pointer;
+}
+
+.menu-mobile{
+    top: 0;
+    right: 0;
+    width: 70px;
+    height: 70px;
+    font-size: 24px;
+    color: white;
+    z-index: 555;
+    background: linear-gradient(90deg, rgba(79, 191, 168, 1) 0%, rgba(19, 87, 152, 1) 100%);
+}
+
+.navbar{
+    box-shadow: initial;
+}
+.navbar-nav .nav-item.active,.navbar-nav .nav-item:hover{
+    background-color: rgba(19, 87, 152, 1);
+    border-radius: 5px;
+    color: #fff;
+}
+
+.navbar-nav .nav-item.active a,.navbar-nav .nav-item:hover a{
+    color: #fff !important;
+}
+
+#carouselControls {
+    height: 600px;
+}
+
+#carouselControls .carousel-inner {
+    height: 100%;
+}
+
+
+#carouselControls .carousel-inner .carousel-item {
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.title_text {
+    position: relative;
+}
+
+.title_text::before {
+    content: " ";
+    height: 100%;
+    width: 10px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: linear-gradient(180deg, rgba(79, 191, 168, 1) 0%, rgba(19, 87, 152, 1) 100%);
+}
+
+.shadow_box{
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.1), 2px 2px 2px rgba(0,0,0,0.15);
+}
+
+.card_hover{
+    transition: all .2s;
+    box-shadow: 0 2px 5px rgba(0, 0, 0,0.1), 0 2px 10px rgba(0, 0, 0,0.05);
+
+}
+
+.card_long_shadow{
+    box-shadow: 3px 3px 2px rgba(0,0,0,0.1);
+}
+
+.card_hover:hover{
+    box-shadow: 0 5px 10px rgba(19, 87, 152,0.30), 0 5px 10px rgba(19, 87, 152,0.22);
+}
+
+.new .image_content{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+
+.new .big_box {
+    height: auto;
+}
+
+.new .box_content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    height: 100%;
+}
+
+.new .box_content img {
+    width: 100%;
+}
+
+.advertise .card{
+    height: 200px;
+}
+
+.advertise_img{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+.box_content_detail {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    background-color: rgba(255, 255, 255, 0.75);
+}
+
+
+footer {
+    background-color: #333333;
+    height: 400px;
+    color: white;
+    position: relative;
+    z-index: 556;
+}
+
+.line {
+    width: 200px;
+    height: 3px;
+    background-color: blue;
+}
+
+h3.title_text_down {
+    position: relative;
+}
+
+h3.title_text_down::before {
+    content: " ";
+    height: 8.5px;
+    width: 30px;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background: linear-gradient(90deg, rgba(79, 191, 168, 1) 0%, rgba(19, 87, 152, 1) 100%);
+}
+
+.gray_background {
+    background-color: #F1F4FA;
+}
+
+.row_link {
+    background-color: #fff;
+}
+
+.gray2_background {
+    background-color: #EFEEEE;
+}
+
+.register_form .row_wrap {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: rgba(16, 36, 94, 0.3) 0px 2px 6px 0px;
+}
+
+
+
+.register_form .head_title h1 {
+    display: inline;
+}
+
+.register_form .head_title::before {
+    content: " ";
+    height: 25px;
+    width: 100px;
+    display: inline-block;
+    left: 0;
+    top: 0;
+    background: linear-gradient(90deg, rgba(79, 191, 168, 1) 0%, rgba(19, 87, 152, 1) 100%);
+}
+
+.register_form .row_wrap.wrap_login {
+    width: 50%;
+    margin: 0 auto;
+    border-radius: 30px;
+}
+
+.menu_mobile{
+    position: fixed;
+    top:0;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(0deg, rgba(79, 191, 168, 1) 0%,rgba(19, 87, 152, 1) 70%, rgba(19, 87, 152, 1) 100%);
+    z-index: 99999;
+    transform: translateX(100%);
+    transition: all .2s;
+    transition-timing-function: linear;
+}
+
+.menu_mobile.active{
+    transform: translateX(0%);
+}
+
+.menu_mobile_item{
+    color: #fff;
+    position: relative;
+    border-bottom: 1px solid rgba(239, 238, 238, 0.45);
+}
+
+.submenu_mobile_item{
+    border-top: 1px solid rgba(239, 238, 238, 0.45);
+}
+
+.submenu_mobile_item .active{
+    background-color: rgba(255, 255, 255, 0.75);
+    color: rgba(19, 87, 152, 1);
+}
+
+
+.menu_mobile_item.active::before {
+    content: " ";
+    height: 100%;
+    width: 5px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: linear-gradient(180deg, rgba(79, 191, 168, 1) 0%, rgba(19, 87, 152, 1) 100%);
+}
+
+.top_bar{
+    background-color: rgba(19, 87, 152, 1);
+    z-index: 10;
+    color: white;
+    font-size: 21px;
+}
+
+.top_bar button{
+    background-color: transparent;
+    border-radius: 10px;
+    border-color: #fff;
+    font-family: 'rsuregular';
+    font-size: 18px;
+    line-height: 20px;
+}
+.menu_mobile_item.active{
+    background-color: #fff;
+    color: rgba(19, 87, 152, 1);
+}
+
+.main_menu_mobile{
+    position: absolute;
+    top: 0;
+    padding-top: 110px;
+    overflow: auto;
+    height: 100vh;
+    padding-right: 15px;
+    width: 105%;
+    max-width: 105% !important;
+}
+.menu_mobile_item i{
+    transform: rotate(180deg);
+    transition: all .2s;
+    transition-timing-function: linear;
+}
+.menu_mobile_item.collapsed i{
+    transform: rotate(0deg);
+}
+
+.close_menu-mobile{
+    width: 50px;
+}
+
+.news .card .card-img-top{
+    height: 250px;
+    background-size: cover;
+    background-position: center;
+}
+
+.download_table thead th,.download_table tbody td{
+    border: none;
+}
+
+
+.download_table thead th{
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+.download_table tbody td {
+    padding: 0;
+    padding-bottom: 20px;
+    height: 75px;   
+}
+.download_table tbody tr div{
+    background-color: white;
+    height: 100%;
+}
+
+.download_border{
+    border-left:  4px solid #f8f9fa;
+    font-size: 26px;
+    color: #ccc;
+}
+
+@media only screen and (max-width: 991px) {
+
+    .shadow_mobile{
+        box-shadow: 0 .125rem .25rem rgba(0,0,0,.075)!important;
+        margin: 0;
+        width: 100%;
+        max-width:100%;
+    }
+    
+    #carouselControls{
+        height: 300px;
+    }
+
+    .new h1,.register_online h1,.academic h1,.advertise h1,.research h1,.event h1,h1.title_text{
+        font-size: 2em;
+    }
+
+    .new .big_box_first{
+        height: 400px;
+    }
+
+    .register_online .card-img-top{
+        height: 30vw;
+        width: auto;
+        background-size: cover;
+        background-position: center;
+
+    }
+
+    .person img{
+        height: 250px;
+        width: auto;
+    }
+
+    .person .card-body{
+        text-align: center;
+    }
+
+    .image_mini{
+        height: 200px;
+    }
+    
+    footer{
+        height: 300px;
+    }
+
+    footer address.col-12 h3{
+        font-size: 1.5em;
+    }
+
+    footer address.col-12 i.h1{
+        font-size: 2em;
+    }
+
+    .department_title_mini{
+        text-align: center;
+    }
+
+    .department_title_mini h4{
+        font-size: 18px;
+    }
+
+    .department_title_mini p{
+        font-size: 16px;
+    }
+
+    .btn_register_seminar{
+        bottom: 0;
+        z-index: 555;
+    }
+
+    .btn_register_seminar button{
+        width: 100%;
+    }
+
+    .news .card .card-img-top{
+        height: 200px;
+    }
+
+    .download_table tbody td {
+        padding-bottom: 10px; 
+    }
+
+  }

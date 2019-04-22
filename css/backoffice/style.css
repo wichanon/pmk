@@ -1,0 +1,128 @@
+html body{
+	background-color: #f1f1f1;
+	font-family: 'RSU';
+	outline: none;
+	padding: 0;
+	margin: 0;
+}
+input{
+	outline: none;
+}
+ul li{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+.box_login{
+	width: 400px;
+	height: 350px;
+	margin-top: 15%;
+	border-radius: 8px;
+	background-color: #fff;
+}
+
+.logo{
+	width: 400px;
+	height: 60px; 
+}
+.logo img{
+	width: 100%;
+}
+.input_data{
+	width: 300px;
+	height: 60px;
+}
+.btn_login{
+	width: 100%;
+	height: 50px;
+	border-radius: 5px;
+	margin: 0 auto;
+	color: #fff;
+	font-size: 24px;
+	background: rgb(19,87,152);
+	background: -webkit-linear-gradient(left, rgba(19,87,152,1) 0%, rgba(77,189,167,1) 100%);
+	background: -o-linear-gradient(left, rgba(19,87,152,1) 0%, rgba(77,189,167,1) 100%);
+	background: linear-gradient(to right, rgba(19,87,152,1) 0%, rgba(77,189,167,1) 100%);
+	border: none;
+}
+.bar_top{
+	width: 100%;
+	height: 70px;
+	background: rgb(19,87,152);
+	background: -webkit-linear-gradient(left, rgba(19,87,152,1) 0%, rgba(77,189,167,1) 100%);
+	background: -o-linear-gradient(left, rgba(19,87,152,1) 0%, rgba(77,189,167,1) 100%);
+	background: linear-gradient(to right, rgba(19,87,152,1) 0%, rgba(77,189,167,1) 100%);
+}	
+.menu_bar{
+	width: 100%;
+	background-color: #fff;
+	height: auto;
+	min-width: 250px;
+}
+.li_menu{
+	width: 100%;
+	height: 30px;
+	text-align: center;
+	padding-top: 5px;
+	font-size: 18px;
+	border-radius: 5px;
+}
+.li_menu:hover{
+	background-color: rgba(19,100,152,1);
+	color: #fff;
+	transition:0.4s;
+}
+.menu_active{
+	background-color: rgba(19,100,152,1);
+	color: #fff;
+}
+.head_menu{
+	font-size: 30px;
+	font-weight: bold;
+	text-align: center;
+	padding: 15px;
+	border-bottom: 1px solid #4dbda7;
+}
+.btn_{
+	cursor: pointer;
+	border: none;
+	border-radius: 5px;
+}
+.logout{
+	float: right;
+	margin:18px 40px 0 0;
+	font-size: 24px;
+	color: #fff;
+}
+.title_page{
+	font-size: 36px;
+	margin: 20px;
+}
+.btn_news{
+	margin: 0 auto;
+	width: 150px;
+	height: 35px;
+	border-radius: 5px;
+	margin-top: 20px;
+	background-color: #4dbda7;
+	color: #fff;
+	outline: none;
+	border: none;
+}
+.btn_red{
+	background-color: #DC143C;
+	color: #fff;
+	border: none;
+	border-radius: 5px;
+}
+.boxx{
+	width: 100%;
+	height: auto;
+	padding: 25px;
+	background-color: #fff;
+	border-radius: 10px;
+}
+.preview_img{
+	width: 100px;
+	height: auto;
+}
