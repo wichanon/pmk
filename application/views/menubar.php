@@ -1,4 +1,89 @@
+<div class="menu_mobile">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 pt-4 pb-4 pl-4 pr-4 top_bar">
+                    <button type="button" name="" id="" class="btn btn-primary pl-5 pr-5">เข้าสู่ระบบ</button>
+                    <div class="float-right d-flex justify-content-center align-items-center h-100 close_menu-mobile"><i
+                            class="fas fa-times"></i></div>
+                </div>
+                <div class="col-12 pl-0 pr-0 main_menu_mobile">
+                    <div class="menu_mobile_item active w-100 pt-4 pb-4 pl-5">
+                        <h4 class="m-0">หน้าแรก</h4>
+                    </div>
+                    <div class="menu_mobile_item w-100 collapsed" data-toggle="collapse" data-target="#about"
+                        aria-controls="about" aria-expanded="false">
+                        <div class="w-100 pt-4 pb-4 pl-5">
+                            <h4 class="m-0 d-inline-block">เกี่ยวกับ</h4>
+                            <div class="float-right pr-5"><i class="fas fa-caret-down"></i></div>
+                        </div>
+                        <div class="w-100 pl-5 submenu_mobile_item collapse" id="about">
+                            <div class="w-100  pt-4 pb-4 pl-5">
+                                <h4 class="m-0 d-inline-block">ประวัติภาควิชา</h4>
+                            </div>
+                            <div class="w-100  pt-4 pb-4 pl-5">
+                                <h4 class="m-0 d-inline-block">โครงสร้างบุคลากร</h4>
+                            </div>
+                            <div class="w-100  pt-4 pb-4 pl-5">
+                                <h4 class="m-0 d-inline-block">สมาคมศิษย์เก่า</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu_mobile_item w-100 pt-4 pb-4 pl-5">
+                        <h4 class="m-0">แผนก</h4>
+                    </div>
+                    <div class="menu_mobile_item w-100 collapsed" data-toggle="collapse" data-target="#register"
+                        aria-controls="register" aria-expanded="false">
+                        <div class="w-100  pt-4 pb-4 pl-5">
+                            <h4 class="m-0 d-inline-block">สมัครออนไลน์</h4>
+                            <div class="float-right pr-5"><i class="fas fa-caret-down"></i></div>
+                        </div>
+                        <div class="w-100 pl-5 submenu_mobile_item collapse" id="register">
+                            <div class="w-100  pt-4 pb-4 pl-5">
+                                <h4 class="m-0 d-inline-block">สมัครสัมมนา</h4>
+                            </div>
+                            <div class="w-100  pt-4 pb-4 pl-5">
+                                <h4 class="m-0 d-inline-block">สมัครวิชาเลือก (Elective)</h4>
+                            </div>
+                            <div class="w-100  pt-4 pb-4 pl-5">
+                                <h4 class="m-0 d-inline-block">ตรวจสอบสถานะลงทะเบียน</h4>
+                            </div>
+                        </div>
 
+                    </div>
+                    <div class="menu_mobile_item w-100 collapsed" data-toggle="collapse" data-target="#article"
+                        aria-controls="article" aria-expanded="false">
+                        <div class="w-100 pt-4 pb-4 pl-5">
+                            <h4 class="m-0 d-inline-block">บทความ</h4>
+                            <div class="float-right pr-5"><i class="fas fa-caret-down"></i></div>
+                        </div>
+                        <div class="w-100 pl-5 submenu_mobile_item collapse" id="article">
+                            <div class="w-100  pt-4 pb-4 pl-5">
+                                <h4 class="m-0 d-inline-block">ข่าววิชาการ</h4>
+                            </div>
+                            <div class="w-100  pt-4 pb-4 pl-5">
+                                <h4 class="m-0 d-inline-block">บทความสุขภาพ</h4>
+                            </div>
+                            <div class="w-100  pt-4 pb-4 pl-5">
+                                <h4 class="m-0 d-inline-block">ดาวน์โหลดทั่วไป</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu_mobile_item w-100 pt-4 pb-4 pl-5">
+                        <h4 class="m-0">ภาพกิจกรรม</h4>
+                    </div>
+                    <div class="menu_mobile_item w-100 pt-4 pb-4 pl-5">
+                        <h4 class="m-0">คลินิกนอกเวลา</h4>
+                    </div>
+                    <div class="menu_mobile_item w-100 pt-4 pb-4 pl-5">
+                        <h4 class="m-0">ติดต่อเรา</h4>
+                    </div>
+                    <div class="menu_mobile_item w-100 pt-4 pb-4 pl-5">
+                        <h4 class="m-0">ลิงค์ที่เกี่ยวข้อง</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 <header class="position-relative">
         <div class="position-absolute menu-mobile d-flex justify-content-center align-items-center">
             <i class="fas fa-bars"></i>
@@ -31,6 +116,9 @@
                                 <li class="nav-item pl-2 pr-2">
                                     <a class="nav-link" href="<?=base_url()?>login">เข้าสู่ระบบ</a>
                                 </li>
+                                <!-- <li class="nav-item pl-2 pr-2">
+                                    <a class="nav-link" href="<?=base_url()?>login"><?php echo $this->session->name_member ?></a>
+                                </li> -->
                             </ul>
                         </div>
                     </nav>

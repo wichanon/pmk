@@ -3,6 +3,7 @@
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<script type="text/javascript">var base_url = '<?=base_url()?>'</script>
 <link href="<?=base_url()?>../css/mdb.min.css" rel="stylesheet">
 <link rel="stylesheet" href="<?=base_url()?>../css/style.css">
 <link rel="stylesheet" href="<?=base_url()?>../css/about.css">

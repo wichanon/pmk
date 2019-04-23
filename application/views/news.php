@@ -20,8 +20,8 @@
     <section class="news pt-2 pb-5">
         <div class="container">
             <div class="row">
-                <?php $i=1; foreach ($list as $key => $value): ?>
-                    <div class="col-lg-3 col-12 mb-lg-0 mb-4 mt-3">
+                <?php  $i=1; foreach ($list as $key => $value): ?>
+                    <a href="<?=base_url().'news/view_detail/'.$value['id']?>" class="col-lg-3 col-12 mb-lg-0 mb-4 mt-3">
                             <div class="card card_hover container-fluid p-0">
                                 <div class="row m-0">
                                     <div class="card-img-top col-lg-12 col-6 image_mini p-0" style="background-image: url('<?=base_url().'../'.$value['image']?>')"></div>
@@ -31,7 +31,7 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                    </a>
                 <?php endforeach ?>
             </div>
         </div>

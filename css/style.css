@@ -548,3 +548,7 @@ h3.title_text_down::before {
     }
 
   }
+
+  .input_error{
+    border: 1px solid red;
+  }

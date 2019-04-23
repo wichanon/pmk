@@ -33,6 +33,8 @@ class Article_technical_model extends CI_Model{
 		$data = array(
 			'name' => $article_technical['name'],
 			'detail' => $article_technical['detail'],
+			'author' => $article_technical['author'],
+			'author_detail' => $article_technical['author_detail'],
 			'image' => $image,
 			'file' => $file,
 			'create_by' => $this->session->id,
@@ -52,6 +54,8 @@ class Article_technical_model extends CI_Model{
 		$data = array(
 			'name' => $article_technical['name'],
 			'detail' => $article_technical['detail'],
+			'author' => $article_technical['author'],
+			'author_detail' => $article_technical['author_detail'],
 			'image' => $image,
 			'file' => $file,
 			'modified_by' => $this->session->id,

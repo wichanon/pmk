@@ -68,6 +68,12 @@ class About_structure_model extends CI_Model{
 		}
 		echo json_encode($json);
 	}
+	public function get_by_structure($structure)
+	{
+		$this->db->where('department' , $structure['name']);
+		$query = $this->db->get('about_structure');
+		return $query->result_array();
+	}
 	
 }
 

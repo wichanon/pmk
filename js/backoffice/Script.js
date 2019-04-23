@@ -156,6 +156,8 @@ function create_article_technical(){
 	$.post(base_url+'/B_article_technical/create_', {
 		name: $('#name').val().trim(),
 		detail: $('#detail').val().trim(),
+		author: $('#author').val().trim(),
+		author_detail: $('#author_detail').val().trim(),
 		image: $('#image_path').val().trim(),
 		file: $('#file_path').val().trim()
 	}, function(data, textStatus, xhr) {
@@ -340,6 +342,8 @@ function edit_article_technical($id=1){
 		id: $id,
 		name : $('#name').val().trim(),
 		detail : $('#detail').val().trim(),
+		author : $('#author').val().trim(),
+		author_detail: $('#author_detail').val().trim(),
 		image: $('#image_path').val().trim(),
 		file: $('#file_path').val().trim()
 	}, function(data, textStatus, xhr) {

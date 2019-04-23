@@ -36,6 +36,22 @@
 								<div class="row">
 									<div class="col-9 mx-auto">
 										<div class="form-group">
+    										<label for="title">ผู้เขียน</label>
+    										<input type="text" class="form-control" id="author" placeholder="...." value="<?=$data['author'];?>">
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-9 mx-auto">
+										<div class="form-group">
+    										<label for="title">รายละเอียดผู้เขียน</label>
+    										<textarea type="text" class="form-control" id="author_detail" placeholder="...."><?=$data['author_detail'];?></textarea>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-9 mx-auto">
+										<div class="form-group">
     										<label for="file">ไฟล์<div class="spinner-border text-info" id="spinner" style="display: none" role="status"><span class="sr-only">Loading...</span></div></label>
 											<div class="custom-file">
 												<input type="hidden" id="file_path" value="<?=$data['file'];?>"> 

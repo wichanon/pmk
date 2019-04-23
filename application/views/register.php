@@ -49,7 +49,7 @@
                         <div class="col-12 mb-4">
                             <div class="form-group">
                                 <label for="">*รหัสผ่าน</label>
-                                <input type="text" class="form-control" name="" id="password" aria-describedby="helpId"
+                                <input type="password" class="form-control" name="" id="password" aria-describedby="helpId"
                                     placeholder="">
 
                             </div>
@@ -58,8 +58,8 @@
                         <div class="col-12 mb-4">
                             <div class="form-group">
                                 <label for="">*ยืนยันรหัสผ่าน</label>
-                                <input type="text" class="form-control" name="" id="password_re" aria-describedby="helpId"
-                                    placeholder="">
+                                <input type="password" class="form-control" name="" id="password_re" aria-describedby="helpId"
+                                    placeholder="" onchange="check_pass()">
 
                             </div>
                         </div>
@@ -74,7 +74,7 @@
                         <div class="col-12 mb-4">
                             <div class="form-group">
                                 <label for="">*โทรศัพท์(มือถือ)</label>
-                                <input type="text" class="form-control" name="" id="tel" aria-describedby="helpId"
+                                <input type="text" pattern="[0-9]"   class="form-control" name="" id="tel" aria-describedby="helpId"
                                     placeholder="">
 
                             </div>
@@ -82,22 +82,21 @@
                         <div class="col-12 mb-4">
                             <div class="form-group">
                                 <label for="">*แผนก/หน่วยงาน</label>
-                                <input type="text" class="form-control" name="" id="department" aria-describedby="helpId"
-                                    placeholder="">
-
+                                <div class="col-4 p-0">
+                                    <select class="custom-select" name="" id="department">
+                                        <option selected>Select one</option>
+                                        <?php $i=1; foreach ($department as $key => $value): ?>
+                                        <option value="<?=$value['name']?>"><?=$value['name']?></option>
+                                        <?php endforeach ?>
+                                    </select>
+                                </div>
                             </div>
                         </div>
                         <div class="col-12 mb-4">
                             <div class="form-group">
                                 <label for="">*ตำแหน่ง</label>
-                                <div class="col-4 p-0">
-                                    <select class="custom-select" name="" id="renk">
-                                        <option selected>Select one</option>
-                                        <option value=""></option>
-                                        <option value=""></option>
-                                        <option value=""></option>
-                                    </select>
-                                </div>
+                                <input type="text" class="form-control" name="" id="rank" aria-describedby="helpId"
+                                    placeholder="">
                             </div>
                         </div>
                         <div class="col-12  d-flex justify-content-center align-items-center mt-5 mb-5">
@@ -110,6 +109,16 @@
     </section>
 
 <?php $this->load->view('footer'); ?>
+
+<script>
+    function check_pass(){
+    
+    if($('#password_re').val() != $('#password').val()){
+        $('#password_re').addClass('input_error');
+        alert("รหัสผ่านไม่ตรงกัน");
+    }
+}
+</script>
 </body>
 
 </html>

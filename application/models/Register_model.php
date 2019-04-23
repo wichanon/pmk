@@ -38,6 +38,25 @@ class Register_model extends CI_Model{
 		 }
 		 echo json_encode($json);
 	}
+	public function register_member($user_data)	
+	{
+
+		$data = array(
+			'firstname' => $user_data['firstname'],
+			'lastname' => $user_data['lastname'],
+			'username' => $user_data['username'],
+			'password' => $user_data['password'],
+			'email' => $user_data['email'],
+			'phone' => $user_data['tel'],
+			'department' => $user_data['department'],
+			'rank' => $user_data['rank']
+		);
+		$this->db->insert('users',$data);
+		 if ($this->db->affected_rows() == 1) {
+		 	$json['status'] =  'create_success';
+		 }
+		 echo json_encode($json);
+	}
 	
 }
 
