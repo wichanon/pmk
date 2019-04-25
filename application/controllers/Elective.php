@@ -12,5 +12,10 @@ class Elective extends CI_Controller
 		$data['department'] = $this->department_model->get_department();
 		$this->load->view('elective',$data); 
 	}
+	public function register_elective()
+	{
+		$data = $this->input->post();
+		$this->department_model->register_department($data);
+	}
 }
 ?>

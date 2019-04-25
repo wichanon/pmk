@@ -114,6 +114,9 @@ function create_about_structure(){
 		name: $('#name').val().trim(),
 		rank: $('#rank').val().trim(),
 		department: $('#department').val().trim(),
+		education: $('#education').val().trim(),
+		is_director: $('input:radio[name=is_director]:checked').val(),
+		role: $('#role').val(),
 		image: $('#image_path').val().trim()
 	}, function(data, textStatus, xhr) {
 		var res = JSON.parse(data);

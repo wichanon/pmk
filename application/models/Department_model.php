@@ -60,6 +60,26 @@ class Department_model extends CI_Model{
 		}
 		echo json_encode($json);
 	}
+	public function register_department($department)
+	{
+
+		$data = array(
+			'firstname' => $department['firstname'],
+			'lastname' => $department['lastname'],
+			'sex' => $department['sex'],
+			'email' => $department['email'],
+			'phonenumber' => $department['phone'],
+			'department_reg' => $department['department_reg'],
+			'start_date' => $department['start_date'],
+			'end_date' => $department['end_date'],
+			'description' => $department['description']
+		);
+		$this->db->insert('register_subjects_list',$data);
+		 if ($this->db->affected_rows() == 1) {
+		 	$json['status'] =  'create_success';
+		 }
+		 echo json_encode($json);
+	}
 	
 }
 

@@ -61,7 +61,33 @@ class Seminar_model extends CI_Model{
 		}
 		echo json_encode($json);
 	}
-	
+	public function get_province()
+	{
+		$query = $this->db->get('provinces');
+		return $query->result_array();
+	}
+	public function register_seminar($data_regis)	
+	{
+		$data = array(
+			'seminar' => $data_regis['seminar'],
+			'firstname_th' => $data_regis['firstname'],
+			'lastname_th' => $data_regis['lastname'],
+			'firstname_eng' => $data_regis['firstname_eng'],
+			'lastname_eng' => $data_regis['lastname_eng'],
+			'sex' => $data_regis['sex'],
+			'office' => $data_regis['office'],
+			'province' => $data_regis['province'],
+			'phonenumber' => $data_regis['phone'],
+			'email' => $data_regis['email'],
+			'status' => $data_regis['work'],
+			'payment' => $data_regis['payment']
+		);
+		$this->db->insert('register_online_list',$data);
+		 if ($this->db->affected_rows() == 1) {
+		 	$json['status'] =  'create_success';
+		 }
+		 echo json_encode($json);
+	}
 }
 
  ?>

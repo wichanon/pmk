@@ -36,7 +36,7 @@
                 </div>
                 <?php $i=1; foreach ($news as $key => $value): 
                 if($i == 1 ){ ?>
-                <div class="col-lg-6 col-12 big_box pr-lg-1 mb-lg-0 mb-3 big_box_first">
+                <a href="<?=base_url().'News/view_detail_home/'.$value['id']?>" class="col-lg-6 col-12 big_box pr-lg-1 mb-lg-0 mb-3 big_box_first" style="color : #000;">
                     <div class="box_content shadow_box">
                         <div style="background-image: url('<?=base_url().'../'.$value['image']?>')" class="image_content"></div>
                         <div class="box_content_detail p-3">
@@ -44,20 +44,20 @@
                             <p><?=$value['detail']?></p>
                         </div>
                     </div>
-                </div>
+                </a>
                 <?php $i++;  ?>
                 <div class="col-lg-6 col-12 big_box">
                     <div class="container-fluid pr-lg-0">
                         <div class="row">
                             <?php }else if($i<6){ ?>
-                            <div class="col-6 pl-0 pr-2 pb-2">
+                            <a href="<?=base_url().'News/view_detail_home/'.$value['id']?>" class="col-6 pl-0 pr-2 pb-2" style="color : #000;">
                                 <div class="box_content shadow_box"><img src="<?=base_url().'../'.$value['image']?>"
                                         class="img-fluid" alt="Responsive image">
                                     <div class="box_content_detail p-3">
                                         <h5><?=$value['name']?></h5>
                                     </div>
                                 </div>
-                            </div>
+                            </a>
                             <?php $i++; ?>
                             <?php }endforeach ?>
                         </div>
@@ -132,13 +132,13 @@
                 <?php $i=1; foreach ($seminar as $key => $value): 
                 if($i <5){?>
                 <div class="col-3 d-lg-block d-none">
-                    <div class="card shadow_box border-0">
+                    <a href="<?=base_url().'seminar/view_detail/'.$value['id']?>" class="card shadow_box border-0">
                         <img class="card-img-top" src="<?=base_url().'../'.$value['image']?>" alt="">
                         <div class="card-body">
-                            <h4 class="card-title"><?=$value['name']?></h4>
+                            <h4 class="card-title" style="color: #000;"><?=$value['name']?></h4>
                             <label for="" class="p-0 m-0 text-muted"><i class="far fa-calendar-alt"></i> : <?=$value['create_datetime']?></label>
                         </div>
-                    </div>
+                    </a>
                 </div>
                 <?php $i++ ?>
                 <?php  } endforeach ?>
@@ -183,7 +183,7 @@
                 </div>
                 <?php $i=1; foreach ($publicrelations as $key => $value): 
                 if($i <5){?>
-                <div class="col-lg-6 col-12">
+                <a href="<?=base_url().'Publicrelations/view_detail/'.$value['id']?>" class="col-lg-6 col-12" >
                     <div class="card mb-3 card_long_shadow">
                         <div class="row no-gutters h-100 m-0">
                             <div class="col-lg-4 col-5 h-100">
@@ -192,7 +192,7 @@
                             </div>
                             <div class="col-lg-8 col-7 h-100">
                                 <div class="card-body">
-                                    <h5 class="card-title"><?=$value['name']?></h5>
+                                    <h5 class="card-title" style="color: #000;"><?=$value['name']?></h5>
                                     <p class="card-text d-lg-block d-none"><?=$value['detail']?></p>
                                     <p class="card-text p_mobile d-block d-lg-none"><?=$value['detail']?></p>
                                     <p class="card-text"><small class="text-muted"><?=$value['modified_datetime']?></small></p>
@@ -200,7 +200,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </a>
                 <?php $i++ ?>
                 <?php  } endforeach ?>
             </div>

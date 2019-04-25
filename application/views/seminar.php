@@ -22,9 +22,8 @@
         <div class="container">
             <div class="row p-lg-0 pl-1 pr-1">
                 <?php $i=1; foreach ($seminar as $key => $value): ?>
-                <a href="#">
                 <div class="col-lg-4 col-6 mb-lg-4 mb-2 pl-1 pr-1 pl-lg-3 pr-lg-3">
-                    <a href="seminar_detail.html">
+                    <a href="<?=base_url().'seminar/view_detail/'.$value['id']?>">
                         <div class="card">
                             <img class="card-img-top" src="<?=base_url().'../'.$value['image']?>" alt="">
                             <div class="card-body">
@@ -32,7 +31,6 @@
                                 <p class="card-text" style="height: 46px; overflow: hidden;"><?=$value['detail']?></p>
                             </div>
                         </div>
-                    </a>
                 </div>
                 </a>
                 <?php endforeach ?>

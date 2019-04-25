@@ -43,6 +43,12 @@ class Publicrelations_model extends CI_Model{
 		}
 		echo json_encode($json);
 	}
+	public function get_by_id_edit($id)
+	{
+		$this->db->where('id' , $id);
+		$query = $this->db->get('publicrelations');
+		return isset($query->result_array()[0]) ? $query->result_array()[0] : array();
+	}
 	public function edit_public($public)
 	{
 		$image = $this->movefile->move($public['image'],'public');

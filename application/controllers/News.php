@@ -5,7 +5,7 @@ class News extends CI_Controller
 	{
 		parent::__construct();
 		$this->load->model('article_technical_model');
-
+		$this->load->model('news_model');
 	}
 	public function Index()
 	{
@@ -16,6 +16,11 @@ class News extends CI_Controller
 	{
 		$res['data'] = $this->article_technical_model->get_by_id_edit($id);
 		$this->load->view('news_detail',$res); 
+	}
+	public function view_detail_home($id=-1)
+	{
+		$res['data'] = $this->news_model->get_by_id_edit($id);
+		$this->load->view('news_home_detail',$res); 
 	}
 	
 }

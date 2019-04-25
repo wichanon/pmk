@@ -33,6 +33,9 @@ class About_structure_model extends CI_Model{
 			'name' => $about_structure['name'],
 			'rank' => $about_structure['rank'],
 			'department' => $about_structure['department'] ,
+			'education' => $about_structure['education'] ,
+			'is_director' => $about_structure['is_director'] ,
+			'role' => $about_structure['role'] ,
 			'image' => $image,
 			'create_by' => $this->session->id,
 			'create_datetime' => date('Y-m-d H:i:s')

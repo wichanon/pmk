@@ -12,5 +12,10 @@ class Health extends CI_Controller
 		$data['list'] = $this->article_health_model->get_article_health();
 		$this->load->view('health',$data); 
 	}
+	public function view_detail($id=-1)
+	{
+		$res['data'] = $this->article_health_model->get_by_id_edit($id);
+		$this->load->view('health_detail',$res); 
+	}
 }
 ?>
