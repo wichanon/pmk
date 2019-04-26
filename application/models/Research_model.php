@@ -33,6 +33,8 @@ class Research_model extends CI_Model{
 		$data = array(
 			'name' => $research['name'],
 			'detail' => $research['detail'],
+			'abstract' => $research['abstract'],
+			'introduction' => $research['introduction'],
 			'image' => $image,
 			'file' => $file,
 			'create_by' => $this->session->id,

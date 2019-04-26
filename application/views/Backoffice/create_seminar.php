@@ -33,6 +33,46 @@
 										</div>
 									</div>
 								</div>
+								<div class="row">
+									<div class="col-9 mx-auto">
+										<div class="form-group">
+    										<label for="detail">วัตถุประสงค์ </label>
+    										<textarea type="text" class="form-control" id="objective" placeholder="รายละเอียด" style="height: 100px;"></textarea>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-9 mx-auto">
+										<div class="form-group">
+    										<label for="detail">ระยะเวลา</label>
+    										<textarea type="text" class="form-control" id="long_term" placeholder="รายละเอียด" style="height: 100px;"></textarea>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-9 mx-auto">
+										<div class="form-group">
+    										<label for="detail">สถานที่</label>
+    										<textarea type="text" class="form-control" id="location" placeholder="รายละเอียด" style="height: 100px;"></textarea>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-9 mx-auto">
+										<div class="form-group">
+    										<label for="detail">รูปแบบ</label>
+    										<textarea type="text" class="form-control" id="format" placeholder="รายละเอียด" style="height: 100px;"></textarea>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-9 mx-auto">
+										<div class="form-group">
+    										<label for="detail">ค่าลงทะเบียน</label>
+    										<textarea type="text" class="form-control" id="regis_fee" placeholder="รายละเอียด" style="height: 100px;"></textarea>
+										</div>
+									</div>
+								</div>
 								<div class="row mt-3">
 									<div class="col-9 mx-auto">
 										<div class="form-group">

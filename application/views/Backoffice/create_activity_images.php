@@ -46,11 +46,17 @@
 										<div class="form-group">
     										<label for="image">รูปภาพ <div class="spinner-border text-info" id="spinner" style="display: none" role="status"><span class="sr-only">Loading...</span></div></label>
 											<div class="custom-file">
-												<input type="hidden" id="image_path">
+												<input type="hidden" class="image_path" id="image_path">
 											  	<input type="file" class="custom-file-input" id="image" accept="image/*" onchange="uploadFile('image')">
 											  	<label class="custom-file-label" for="image" id="image_name">Choose file</label>
 											</div>
 										</div>
+									</div>
+								</div>
+								<div class="add_image" id="add_image"></div>
+								<div class="row mt-2">
+									<div class="col-9 mx-auto">
+										<button class="btn_login mx-auto" onclick="add_activity_images()">เพิ่มรูป</button>
 									</div>
 								</div>
 								<div class="row mt-2">

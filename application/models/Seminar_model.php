@@ -32,6 +32,11 @@ class Seminar_model extends CI_Model{
 		$data = array(
 			'name' => $seminar['name'],
 			'detail' => $seminar['detail'],
+			'objective' => $seminar['objective'],
+			'long_term' => $seminar['long_term'],
+			'location' => $seminar['location'],
+			'format' => $seminar['format'],
+			'regis_fee' => $seminar['regis_fee'],
 			'image' => $image,
 			'create_by' => $this->session->id,
 			'create_datetime' => date('Y-m-d H:i:s')

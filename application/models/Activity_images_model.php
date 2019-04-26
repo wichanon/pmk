@@ -28,6 +28,7 @@ class Activity_images_model extends CI_Model{
 
 	public function create_activity_images($activity_images)
 	{
+		
 		$image = $this->movefile->move($activity_images['image'],'activity_images');
 		$data = array(
 			'name' => $activity_images['name'],

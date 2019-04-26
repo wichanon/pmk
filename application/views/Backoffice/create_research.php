@@ -33,6 +33,22 @@
 										</div>
 									</div>
 								</div>
+								<div class="row">
+									<div class="col-9 mx-auto">
+										<div class="form-group">
+    										<label for="detail">Abstract</label>
+    										<textarea type="text" class="form-control" id="abstract" placeholder="รายละเอียด...."></textarea>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-9 mx-auto">
+										<div class="form-group">
+    										<label for="detail">Introduction</label>
+    										<textarea type="text" class="form-control" id="introduction" placeholder="รายละเอียด...."></textarea>
+										</div>
+									</div>
+								</div>
 								<div class="row mt-3">
 									<div class="col-9 mx-auto">
 										<div class="form-group">

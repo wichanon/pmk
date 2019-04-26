@@ -14,7 +14,7 @@
             <div class="row">
                 
                 <div class="col-12 mb-5 mt-5">
-                        <img class="img-fluid" src="<?=base_url().'../'.$data['image']?>" alt="">
+                        <img class="img-fluid" style="width: 100%" src="<?=base_url().'../'.$data['image']?>" alt="">
                 </div>
                 <div class="col-12 mt-3 pb-3">
                         <h3><?=$data['name'];?></h3>

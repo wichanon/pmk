@@ -87,6 +87,11 @@ function create_seminar(){
 	$.post(base_url+'/B_seminar/create_', {
 		name: $('#name').val().trim(),
 		detail: $('#detail').val().trim(),
+		objective: $('#objective').val().trim(),
+		long_term: $('#long_term').val().trim(),
+		location: $('#location').val().trim(),
+		format: $('#format').val().trim(),
+		regis_fee: $('#regis_fee').val().trim(),
 		image: $('#image_path').val().trim()
 	}, function(data, textStatus, xhr) {
 		var res = JSON.parse(data);
@@ -196,6 +201,8 @@ function create_article_download(){
 		}
 	});
 }
+
+$i =0;
 function create_activity_images(){
 	$.post(base_url+'/B_activity_images/create_', {
 		name: $('#name').val().trim(),
@@ -208,6 +215,11 @@ function create_activity_images(){
 			swal("สำเร็จ", "บันทึกข้อมูลเรียบร้อบ", "success");
 		}
 	});
+}
+
+function add_activity_images() {
+	$('#add_image').append('<div class="row"><div class="col-9 mx-auto"><div class="form-group"><label for="image">รูปภาพ <div class="spinner-border text-info" id="spinner" style="display: none" role="status"><span class="sr-only">Loading...</span></div></label><div class="custom-file"><input type="hidden" class="image_path" id="image'+$i+'_path"><input type="file" class="custom-file-input" id="image'+$i+'" accept="image/*" onchange="uploadFile(\'image'+$i+'\')"><label class="custom-file-label" for="image" id="image'+$i+'_name">Choose file</label></div></div></div></div>');
+	$i++;
 }
 function create_link_connected(){
 	$.post(base_url+'/B_link_connected/create_', {
@@ -224,6 +236,8 @@ function create_research(){
 	$.post(base_url+'/B_research/create_', {
 		name: $('#name').val().trim(),
 		detail: $('#detail').val().trim(),
+		abstract: $('#abstract').val().trim(),
+		introduction: $('#introduction').val().trim(),
 		image: $('#image_path').val().trim(),
 		file: $('#file_path').val().trim()
 	}, function(data, textStatus, xhr) {
@@ -778,6 +792,30 @@ function delete_link_connected($id){
   	.then((willDelete) => {
 		if (willDelete) {
 			$.post(base_url+'/B_link_connected/del_link_connected', {
+  				id: $id
+  		}, function(data, textStatus, xhr) {
+  			var res = JSON.parse(data);
+  			if(res.status == "del_success"){
+  				swal("สำเร็จ", "ข้อมูลถูกลบเรียบร้อย", "success");
+  			}
+  		});
+		} else {
+			swal("คำสั่งถูกยกเลิก");
+		}
+	});
+}
+function delete_research($id){
+	swal({
+		title: "แน่ใจว่าต้องการลบข้อมูล?",
+		icon: "warning",
+		buttons: true,
+		dangerMode: true,
+	})
+  	
+
+  	.then((willDelete) => {
+		if (willDelete) {
+			$.post(base_url+'/B_research/del_research', {
   				id: $id
   		}, function(data, textStatus, xhr) {
   			var res = JSON.parse(data);

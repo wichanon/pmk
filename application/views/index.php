@@ -132,8 +132,8 @@
                 <?php $i=1; foreach ($seminar as $key => $value): 
                 if($i <5){?>
                 <div class="col-3 d-lg-block d-none">
-                    <a href="<?=base_url().'seminar/view_detail/'.$value['id']?>" class="card shadow_box border-0">
-                        <img class="card-img-top" src="<?=base_url().'../'.$value['image']?>" alt="">
+                    <a href="<?=base_url().'seminar/view_detail/'.$value['id']?>" class="card shadow_box border-0" style="height: 360px;">
+                        <img class="card-img-top" style="height: 170px;" src="<?=base_url().'../'.$value['image']?>" alt="">
                         <div class="card-body">
                             <h4 class="card-title" style="color: #000;"><?=$value['name']?></h4>
                             <label for="" class="p-0 m-0 text-muted"><i class="far fa-calendar-alt"></i> : <?=$value['create_datetime']?></label>
@@ -160,13 +160,13 @@
                 <?php $i=1; foreach ($article_technical as $key => $value): 
                 if($i <4){?>
                 <div class="col">
-                    <div class="card card_hover">
-                        <img class="card-img-top" src="<?=base_url().'../'.$value['image']?>" alt="">
+                    <a href="<?=base_url().'news/view_detail/'.$value['id']?>" class="card card_hover">
+                        <img class="card-img-top" style="height: 250px;" src="<?=base_url().'../'.$value['image']?>" alt="">
                         <div class="card-body">
-                            <h4 class="card-title"><?=$value['name']?></h4>
-                            <p class="card-text"><?=$value['detail']?></p>
+                            <h4 class="card-title" style="height: 60px;"><?=$value['name']?></h4>
+                            <p class="card-text" style="height: 85px; overflow: hidden;"><?=$value['detail']?></p>
                         </div>
-                    </div>
+                    </a>
                 </div>
                 <?php $i++ ?>
                 <?php  } endforeach ?>
@@ -193,7 +193,7 @@
                             <div class="col-lg-8 col-7 h-100">
                                 <div class="card-body">
                                     <h5 class="card-title" style="color: #000;"><?=$value['name']?></h5>
-                                    <p class="card-text d-lg-block d-none"><?=$value['detail']?></p>
+                                    <p class="card-text d-lg-block d-none" style="height: 80px; overflow: hidden;"><?=$value['detail']?></p>
                                     <p class="card-text p_mobile d-block d-lg-none"><?=$value['detail']?></p>
                                     <p class="card-text"><small class="text-muted"><?=$value['modified_datetime']?></small></p>
                                 </div>
@@ -260,15 +260,15 @@
                 <?php $i=1; foreach ($research as $key => $value): 
                 if($i <4){?>
                 <div class="col-lg col-12 mb-lg-0 mb-4">
-                    <div class="card card_hover container-fluid p-0">
+                    <a href="<?=base_url().'Research/view_detail/'.$value['id']?>" class="card card_hover container-fluid p-0" style="color: #000;">
                         <div class="row">
-                            <img class="card-img-top col-12" style="height: 300px;" src="<?=base_url().'../'.$value['image']?>" alt="">
-                            <div class="card-body col-12">
+                            <img class="card-img-top col-12"  style="height: 300px;" src="<?=base_url().'../'.$value['image']?>" alt="">
+                            <div class="card-body col-12" style="height: 150px; overflow: hidden;">
                                 <h4 class="card-title"><?=$value['name']?></h4>
-                                <p class="card-text" style="width: 100%; overflow: hidden;">Text</p>
+                                <p class="card-text" style="width: 100%; overflow: hidden;"><?=$value['detail']?></p>
                             </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
                 <?php $i++; ?>
                 <?php }  endforeach ?>
